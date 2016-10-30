@@ -24,6 +24,10 @@ function call($controller, $action) {
             break;
         case 'examples':
             $controller = new ExamplesController();
+            break;
+        case 'rsvp':
+            $controller = new RsvpController();
+            break;
     }
 
     $controller->{ str_replace('-', '_', $action) }();
