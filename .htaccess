@@ -1,0 +1,45 @@
+# Apache Rewrite Rules
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+# Protect the htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect log.txt
+<Files ./connection.php>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Disable directory browsing
+Options All -Indexes
+
+# -- Production --
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://kelly.teagan.org/$1 [R,L]
+
+# RewriteRule (.*)$ /index.php?controller=$1 [L]
+
+# RewriteRule    ^parrots/([A-Za-z0-9-]+)/?$     index.php?controller=$1     [NC,L]
+# RewriteRule     ^/index\.html$                 /index.php    [NC,L]
+# RewriteRule     ^([^/]+)\.html$                 /index.php?controller=$1    [NC,L]
+# RewriteRule ^([^/]*)/([^/]*)$ /index.php?controller=$1&action=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)/([^/]*)$ /index.php?controller=$1&action=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)$ /index.php?controller=$1 [L]
+
+#RewriteRule ^(about)/?$ /index.php?controller=$1&action=index [L]
+
+# End of Apache Rewrite Rules
+</IfModule>
