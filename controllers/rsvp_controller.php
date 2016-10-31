@@ -1,4 +1,6 @@
 <?php
+require_once('/util.php');
+
 class RsvpController {
 
     public function __construct() {}
@@ -7,8 +9,8 @@ class RsvpController {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $success = Rsvp::saveRsvp();
             if ($success) {
-                header('Location: http://austinandkelly.foo/rsvp/thankyou');
-                die();
+                $config = include('/config.php');
+                Util::redirect($config['host'] . '/rsvp/thankyou');
             }
         }
         require_once('views/rsvp/index.php');
