@@ -24,7 +24,7 @@ $isActive = function ($page) use ($controller) {
     <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/assets/css/theme.css?002" rel="stylesheet">
+    <link href="/assets/css/theme.css?003" rel="stylesheet">
 
 </head>
 <body>
