@@ -120,32 +120,26 @@ h1 {
 }
 
 .home-large {
-    font-size: 45px;
-}
-
-@media only screen and (min-width : 320px) {
-    .home-large {
-        font-size: 32px;
-        padding-top: 30px;
-    }
+    font-size: 32px;
+    padding-top: 30px;
 }
 
 @media only screen and (min-width : 480px) {
     .home-large {
         font-size: 42px;
-        padding-top: 30px;
     }
 }
 
 @media only screen and (min-width : 768px) {
     .home-large {
+        font-size: 42px;
         padding-top: 25%;
     }
 }
 
 @media only screen and (min-width : 992px) {
     .home-large {
-        font-size: 68px;
+        font-size: 62px;
     }
 }
 
