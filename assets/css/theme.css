@@ -25,6 +25,22 @@ h1 {
     }
 }
 
+.rsvp-title {
+    margin-bottom: 10px;
+}
+
+.rsvp-about {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.reg-about {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 17px;
+    text-align: center;
+}
+
 .about-address {
     text-align: center;
     font-size: 16px;
@@ -75,6 +91,19 @@ h1 {
 
 .lodging-address {
     margin-top: 40px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-default {
+    background-color: #758978;
+    color: #fff;
+}
+
+.form-control {
+  border-radius: 0;
 }
 
 .footer {
