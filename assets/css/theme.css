@@ -4,10 +4,64 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
     background-color: #f5f5f5;
+    color: #000;
+}
+
+h1 {
+    color: #39433b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width : 320px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.about-address {
+    text-align: center;
+    font-size: 16px;
+}
+
+.about-venue {
+    text-align: center;
+    width: 50%;
+    margin: 20px auto 0 auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+@media only screen and (min-width : 320px) {
+    .about-venue {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .about-venue {
+        width: 75%;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .about-venue {
+        width: 60%;
+        font-size: 17px;
+    }
 }
 
 .footer {
     width: 100%;
+    margin-top: 20px;
 }
 
 .footer > .container {
@@ -54,14 +108,14 @@ body {
 @media only screen and (min-width : 320px) {
     .home-large {
         font-size: 32px;
-        padding-top: 10px;
+        padding-top: 30px;
     }
 }
 
 @media only screen and (min-width : 480px) {
     .home-large {
         font-size: 42px;
-        padding-top: 10px;
+        padding-top: 30px;
     }
 }
 

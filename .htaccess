@@ -10,8 +10,13 @@ Order Allow,Deny
 Deny from all
 </Files>
 
-# Protect log.txt
+# Protect connection and config files
 <Files ./connection.php>
+Order Allow,Deny
+Deny from all
+</Files>
+
+<Files ./config.php>
 Order Allow,Deny
 Deny from all
 </Files>
