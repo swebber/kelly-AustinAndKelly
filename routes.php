@@ -19,14 +19,20 @@ function call($controller, $action) {
         case 'home':
             $controller = new HomeController();
             break;
+        case 'rsvp':
+            $controller = new RsvpController();
+            break;
         case 'about':
             $controller = new AboutController();
             break;
+        case 'lodging-transportation':
+            $controller = new LodgingTransportationController();
+            break;
+        case 'registery':
+            $controller = new RegisteryController();
+            break;
         case 'examples':
             $controller = new ExamplesController();
-            break;
-        case 'rsvp':
-            $controller = new RsvpController();
             break;
     }
 

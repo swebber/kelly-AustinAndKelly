@@ -14,7 +14,7 @@ $isActive = function ($page) use ($controller) {
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>Austin &amp; Kelly</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,32 +39,30 @@ $isActive = function ($page) use ($controller) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Austin and Kelly</a>
+                <a class="navbar-brand" href="/">AUSTIN &amp; KELLY</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li <?php $isActive('home'); ?>><a href="/">Home</a></li>
-                    <li <?php $isActive('about'); ?>><a href="/about">About</a></li>
-                    <li <?php $isActive('examples'); ?>><a href="/examples">Examples</a></li>
+                <ul class="nav navbar-nav navbar-right">
                     <li <?php $isActive('rsvp'); ?>><a href="/rsvp">RSVP</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/">Action</a></li>
-                            <li><a href="/">Another action</a></li>
-                            <li><a href="/">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="/">Separated link</a></li>
-                            <li><a href="/">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li <?php $isActive('about'); ?>><a href="/about">About</a></li>
+                    <li <?php $isActive('lodging-transportation'); ?>><a href="/lodging-transportation">Lodging/Transportation</a></li>
+                    <li <?php $isActive('registery'); ?>><a href="/registery">Registery</a></li>
+                    <?php /* <li <?php $isActive('examples'); ?>><a href="/examples">Examples</a></li> */ ?>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
 
     <?php require_once('routes.php'); ?>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">
+                If you have any questions please call<br />
+                <b>Kelly Webber</b> 610.213.3442 &nbsp; <b>Austin Carter</b> 570.292.3278 &nbsp; <b>Diane Webber</b> 215.540-4439
+            </p>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
