@@ -59,7 +59,7 @@ $isActive = function ($page) use ($controller) {
         <div class="container">
             <p class="text-muted text-center">
                 If you have any questions please call<br />
-                <b>Kelly Webber</b> 610.213.3442 &nbsp; <b>Austin Carter</b> 570.292.3278 &nbsp; <b>Diane Webber</b> 215.540-4439
+                <b>Kelly&nbsp;Webber</b>&nbsp;610.213.3442 &nbsp; <b>Austin&nbsp;Carter</b>&nbsp;570.292.3278 &nbsp; <b>Diane&nbsp;Webber</b>&nbsp;215.540.4439
             </p>
         </div>
     </footer>

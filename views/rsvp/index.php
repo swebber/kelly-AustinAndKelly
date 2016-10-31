@@ -3,13 +3,14 @@
     <p class="rsvp-about">Please RSVP by May 25th</p>
     <form method="post" action="/rsvp">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-1 col-md-2 hidden-xs"></div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
                 <div class="form-group">
                     <label for="guestNames">Guest Name(s)</label>
                     <input type="text" class="form-control" id="guestNames"></input>
                 </div>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-5 col-md-4">
                 <div class="form-group">
                     <label for="willAttend">Will You Be Attending?</label>
                     <select class="form-control" id="willAttend">
@@ -21,7 +22,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-1 col-md-2 hidden-xs"></div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
                 <div class="form-group">
                     <label for="needTrans">Will You Need Transportation?</label>
                     <select class="form-control" id="needTrans">
@@ -31,13 +33,18 @@
                     </select>
                 </div>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-5 col-md-4">
                 <div class="form-group">
                     <label for="dietInfo">Dietary Restrictions</label>
                     <input type="text" class="form-control" id="dietInfo"></input>
                 </div>
             </div>
         </div>
-        <input type="submit" class="btn btn-default" value="Submit">
+        <div class="row">
+            <div class="col-sm-1 col-md-2 hidden-xs"></div>
+            <div class="col-xs-12 col-sm-10">
+                <input type="submit" class="btn btn-default" value="Submit">
+            </div>
+        </div>
     </form>
 </div>
