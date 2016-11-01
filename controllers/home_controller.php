@@ -11,6 +11,11 @@ class HomeController {
     public function error() {
         require_once('views/home/error.php');
     }
+    
+    public function email_test() {
+        $mailSuccess = Home::sendTestEmail();
+        require_once('views/home/email-test.php');
+    }
 
 }
 ?>
