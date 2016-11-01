@@ -103,7 +103,7 @@ h1 {
 }
 
 .form-control {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .footer {
@@ -189,4 +189,8 @@ h1 {
 
 .theme-showcase .navbar .container {
     width: auto;
+}
+
+.form-control-feedback {
+    right: 15px;
 }

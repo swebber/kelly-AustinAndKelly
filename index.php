@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_SERVER)) {
+    session_start();
+}
+
 require_once('connection.php');
 
 $controller = isset($_GET['controller']) ? $_GET['controller'] : 'home';
