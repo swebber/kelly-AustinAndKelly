@@ -20,20 +20,17 @@ class Home {
     public static function sendTestEmail() {
         $config = include('/config.php');
         $client = new PostmarkClient($config['server_api_token']);
-        $client::$VERIFY_SSL = false;
-        
-        $sendResult = null;
+        $client::$VERIFY_SSL = $config['use_ssl'];
         
         try {
             $sendResult = $client->sendEmail(
                     'webmaster@notss.com', 'scott@teagan.org', 'Test - Subject', 'Body - Hello from Postmark');
+            return true;
         } catch (PostmarkException  $ex) {
-            var_dump($ex);
+            return false;
         } catch (Exception $generalException) {
-            var_dump($generalException);
+            return false;
         }
-        
-        return $sendResult;
     }
 
 }

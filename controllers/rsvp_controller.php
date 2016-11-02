@@ -7,11 +7,9 @@ class RsvpController {
 
     public function index() {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $success = Rsvp::saveRsvp();
-            if ($success) {
-                $config = include('/config.php');
-                Util::redirect($config['host'] . '/rsvp/thankyou');
-            }
+            Rsvp::saveRsvp();
+            $config = include('/config.php');
+            Util::redirect($config['host'] . '/rsvp/thankyou');
         }
         require_once('views/rsvp/index.php');
     }

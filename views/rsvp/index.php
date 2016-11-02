@@ -40,7 +40,7 @@
             <div class="col-xs-12 col-sm-5 col-md-4">
                 <div class="form-group">
                     <label for="dietInfo">Dietary Restrictions</label>
-                    <input type="text" class="form-control" id="dietInfo"></input>
+                    <input type="text" class="form-control" id="dietInfo" name="dietInfo"></input>
                 </div>
             </div>
         </div>
