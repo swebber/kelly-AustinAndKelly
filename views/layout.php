@@ -1,5 +1,5 @@
 <?php
-require_once('/util.php');
+require_once('util.php');
 
 $isActive = function ($page) use ($controller) {
     echo ($controller == $page) ? 'class="active"' : '';

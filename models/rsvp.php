@@ -1,6 +1,6 @@
 <?php
 
-require_once('/vendor/autoload.php');
+require_once('vendor/autoload.php');
 
 use Postmark\PostmarkClient;
 use Postmark\Models\PostmarkException;
@@ -46,7 +46,7 @@ class Rsvp {
 
         // send data as email
 
-        $config = include('/config.php');
+        $config = include('config.php');
         $client = new PostmarkClient($config['server_api_token']);
         $client::$VERIFY_SSL = $config['use_ssl'];
 
@@ -55,7 +55,8 @@ class Rsvp {
         $message .= "<tr style='background: #eee;'><td><strong>Guest Names:</strong> </td><td>" . $guestNames . "</td></tr>";
         $message .= "<tr><td><strong>Is Attending:</strong> </td><td>" . ($isAttending ? "Yes" : "No") . "</td></tr>";
         $message .= "<tr><td><strong>Transportation:</strong> </td><td>" . ($needsTransport ? "Yes" : "No") . "</td></tr>";
-        $message .= "<tr><td><strong>Diet:</strong> </td><td>" . $diet . "</td></tr>";
+        $message .= "<tr><td><strong>Diet:</strong></td><td>" . $diet . "</td></tr>";
+        $message .= "<tr><td><strong>Remote Addr:</strong></td><td>" . $_SERVER['REMOTE_ADDR'] . "</td></tr>";
         $message .= "</table>";
         $message .= "</body></html>";
 
